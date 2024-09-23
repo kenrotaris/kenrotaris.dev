@@ -1,0 +1,12 @@
+node_modules
+
+# Ignore Gradle files
+.gradle/
+build/
+
+# Ignore frontend build/dist directories
+frontend/build/
+frontend/dist/
+
+# Ignore local history or editor-specific files
+.history/

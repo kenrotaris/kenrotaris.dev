@@ -1,0 +1,10 @@
+services:
+  backend:
+    container_name: kenrotaris-backend
+    build:
+      context: ./backend
+      dockerfile: Dockerfile.backend
+    ports:
+      - "7777:7777" # Host port 7777 to container port 7777 (Java backend)
+    environment:
+      - SPRING_PROFILES_ACTIVE=prod # Set environment variable for Spring profile

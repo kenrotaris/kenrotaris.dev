@@ -1,0 +1,14 @@
+# Use Java runtime as a parent image
+FROM openjdk:17-jdk
+
+# Set the working directory in the container
+WORKDIR /app
+
+# Copy the jar file into the container
+COPY ./build/libs/kenrotaris.dev-*.jar /app/app.jar
+
+# Make port 7777 available to the world outside this container
+EXPOSE 7777
+
+# Run the jar file 
+ENTRYPOINT ["java", "-jar", "app.jar"]

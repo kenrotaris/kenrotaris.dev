@@ -1,0 +1,20 @@
+{
+    "configurations": [
+        {
+            "type": "node-terminal",
+            "name": "Frontend",
+            "request": "launch",
+            "command": "npx vite",
+            "cwd": "${workspaceFolder}/frontend"
+        },
+        {
+            "type": "java",
+            "name": "Backend",
+            "request": "launch",
+            "mainClass": "dev.kenrotaris.backend.Application",
+            "projectName": "backend",
+            "cwd": "${workspaceFolder}/backend",
+            "args": ["--spring.profiles.active=dev"]
+        }
+    ]
+}

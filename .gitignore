@@ -27,7 +27,6 @@ replay_pid*
 .pnp.js
 
 # Ignore project and environment settings
-/.vscode/
 /.history/
 /.settings/
 /.classpath

@@ -1,3 +1,10 @@
+Thank you for checking out my portfolio website project!
+
+
+This project is productive on [kenrotaris.dev](kenrotaris.dev)
+Feel free to contact me: [info@kenrotaris.dev](mailto:info@kenrotaris.dev)
+
+### Run Project:
 #### Build the backend
 Change directory:
 ```

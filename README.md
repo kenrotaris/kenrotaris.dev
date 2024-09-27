@@ -38,6 +38,11 @@ Install packages with pnpm:
 pnpm i
 ```
 
+Build frontend with pnpm:
+```
+pnpm run build
+```
+
 Run the frontend:
 ```
 pnpm start

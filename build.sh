@@ -11,8 +11,8 @@ gradle build
 # Navigate back to root, then go to frontend and build using npm
 echo "Building frontend..."
 cd ../frontend
-npm install
-npm run build
+pnpm i
+pnpm run build
 
 end_time=$(date +%s)
 duration=$(( end_time - start_time ))

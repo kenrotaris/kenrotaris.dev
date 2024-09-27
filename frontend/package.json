@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "start": "vite",
-    "build": "vite build"
+    "start": "npx vite",
+    "build": "npx vite build"
   },
   "author": "Ken Rotaris",
   "license": "ISC",

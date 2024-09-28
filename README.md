@@ -40,10 +40,10 @@ pnpm i
 
 Build frontend with pnpm:
 ```
-pnpm run build
+npm run build
 ```
 
 Run the frontend:
 ```
-pnpm start
+npm start
 ```

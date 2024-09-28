@@ -35,7 +35,7 @@ cd frontend
 
 Install packages with pnpm:
 ```
-pnpm i
+npm install
 ```
 
 Build frontend with pnpm:

@@ -1,0 +1,39 @@
+.container {
+  text-align: center;
+  flex-direction: column;
+
+  .about-me{
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+
+  h1, h2, p, a {
+    color: #f6f6f6;
+  }
+
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 0.2em;
+  }
+
+  p {
+    font-family: 'GeistMonoVF', sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.6em;
+    margin-bottom: 2em;
+  }
+
+  a {
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 8px;
+    border: 1px solid #ccd6f6;
+    border-radius: 5px;
+    background-color: transparent;
+  }
+
+  a:hover {
+    color: #dbdbdb;
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+}

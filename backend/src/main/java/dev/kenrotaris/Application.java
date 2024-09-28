@@ -1,4 +1,4 @@
-package dev.kenrotaris.backend;
+package dev.kenrotaris;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

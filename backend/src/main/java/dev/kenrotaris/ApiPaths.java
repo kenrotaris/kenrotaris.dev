@@ -1,4 +1,4 @@
-package dev.kenrotaris.backend;
+package dev.kenrotaris;
 
 public final class ApiPaths {
     private ApiPaths() {}

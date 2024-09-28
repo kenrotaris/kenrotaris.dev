@@ -11,7 +11,7 @@
             "type": "java",
             "name": "Backend",
             "request": "launch",
-            "mainClass": "dev.kenrotaris.backend.Application",
+            "mainClass": "dev.kenrotaris.Application",
             "projectName": "backend",
             "cwd": "${workspaceFolder}/backend",
             "args": ["--spring.profiles.active=dev"]

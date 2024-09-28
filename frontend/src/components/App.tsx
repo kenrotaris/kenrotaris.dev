@@ -1,4 +1,6 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from "./home/Home";
 
 function App() {
   useEffect(() => {
@@ -7,17 +9,19 @@ function App() {
         if (!response.ok) {
           throw new Error("Network response was not ok");
         }
-        console.log(response.text());
+        response.text().then(text => console.log(text));
       })
       .catch(error => console.error("There was an error!", error));
   }, []);
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>Welcome to my page!</p>
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+        <Routes>
+          <Route path="/" element={<Home />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 

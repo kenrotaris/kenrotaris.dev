@@ -1,12 +1,12 @@
-import "./Footer.scss";
+import './Footer.scss'
 
 function Footer() {
   return (
-    <div className="footer">
-      <a href="/">Home</a>
+    <footer className="footer">
+      <a href="https://github.com/kenrotaris">GitHub</a>
       <a href="https://www.linkedin.com/in/kenrotaris/">LinkedIn</a>
       <a href="mailto:info@kenrotaris.dev">Email</a>
-    </div>
+    </footer>
   );
 }
 

@@ -1,6 +1,7 @@
+// Main app component with routing
 import React, { useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Home from "./home/Home";
+import Home from "./pages/Home/Home";
 
 function App() {
   useEffect(() => {

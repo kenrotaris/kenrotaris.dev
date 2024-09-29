@@ -1,0 +1,50 @@
+.about {
+  text-align: center;
+  max-width: 50em;
+  margin: 0 auto;
+  padding: 1em;
+
+  h1, h2, p, a {
+    color: #f6f6f6;
+  }
+
+  h1 {
+    font-size: 3em;
+    margin-bottom: 0.2em;
+  }
+
+  .job-title {
+    font-size: 1.2em;
+    margin-bottom: 2em;
+  }
+
+  .about-content {
+    p {
+      font-family: 'GeistMonoVF', sans-serif;
+      font-size: 1em;
+      line-height: 1.6;
+      margin-bottom: 2em;
+    }
+  }
+
+  .cta-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+
+    .cta-button {
+      text-decoration: none;
+      padding: 0.5em 1em;
+      border: 1px solid #ccd6f6;
+      border-radius: 5px;
+      background-color: transparent;
+      transition: background-color 0.3s ease;
+  
+      &:hover {
+        color: #dbdbdb;
+        background-color: rgba(255, 255, 255, 0.2);
+      }
+    }
+  }
+}

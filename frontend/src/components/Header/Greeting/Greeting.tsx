@@ -1,0 +1,30 @@
+import React, { useState, useEffect } from 'react';
+import './Greeting.scss';
+
+const Greeting = () => {
+  const [greeting, setGreeting] = useState('');
+
+  useEffect(() => {
+    const currentHour = new Date().getHours();
+
+    if (currentHour < 6) {
+      setGreeting('Still up? 🌙 Good night, but feel free to explore!');
+    } else if (currentHour < 12) {
+      setGreeting('Good morning! 🌞');
+    } else if (currentHour < 17) {
+      setGreeting('Good afternoon!');
+    } else if (currentHour < 20) {
+      setGreeting('Good evening!');
+    } else {
+      setGreeting('Good night! 🌙');
+    }
+  }, []);
+
+  return (
+    <div className='greeting'>
+      <p>{greeting}</p>
+    </div>
+  );
+};
+
+export default Greeting;

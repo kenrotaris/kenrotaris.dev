@@ -1,0 +1,41 @@
+@font-face {
+  font-family: 'GeistMonoVF';
+  src: url('/src/assets/fonts/GeistMonoVF.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GeistVF';
+  src: url('/src/assets/fonts/GeistVF.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body, html {
+  font-family: 'GeistVF', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0a0a0a;
+  margin: 0;
+  padding: 0;
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2em 1em;
+  max-width: 800px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+p {
+  margin: 0;
+}

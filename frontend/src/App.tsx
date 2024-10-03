@@ -2,6 +2,7 @@
 import React, { useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from "./pages/Home/Home";
+import ProjectsHome from "./pages/Projects/Projects";
 
 function App() {
   useEffect(() => {
@@ -20,6 +21,7 @@ function App() {
       <div className="App">
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/projects" element={<ProjectsHome/>} />
         </Routes>
       </div>
     </Router>

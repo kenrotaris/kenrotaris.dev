@@ -4,8 +4,12 @@ import Greeting from './Greeting/Greeting';
 function Header() {
   return (
     <header className="header">
-      <Greeting></Greeting>
-      <a className="button" href="mailto:info@kenrotaris.dev">Get in Touch</a>
+      <Greeting />
+      <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </header>
   );
 }

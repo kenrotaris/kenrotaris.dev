@@ -3,26 +3,32 @@
   max-width: 50em;
   margin: 0 auto;
   padding: 1em;
-
-  h1, h2, p, a {
-    color: #f6f6f6;
-  }
+  color: #ccd6f6;
 
   h1 {
-    font-size: 3em;
+    font-size: 3.5em;
     margin-bottom: 0.2em;
+    letter-spacing: 0.05em;
   }
 
   .job-title {
     font-size: 1.2em;
     margin-bottom: 2em;
+    color: #888;
+    font-weight: 300;
+    letter-spacing: 0.25em;
   }
 
   .about-content {
+    h2 {
+      font-size: 2em;
+      margin-bottom: 1em;
+    }
+
     p {
       font-family: 'GeistMonoVF', sans-serif;
       font-size: 1em;
-      line-height: 1.6;
+      line-height: 1.8;
       margin-bottom: 2em;
     }
   }
@@ -35,15 +41,26 @@
 
     .cta-button {
       text-decoration: none;
-      padding: 0.5em 1em;
-      border: 1px solid #ccd6f6;
-      border-radius: 5px;
-      background-color: transparent;
-      transition: background-color 0.3s ease;
-  
+      padding: 0.75em 1.5em;
+      border: 1px solid #64ffda;
+      border-radius: 4px;
+      font-size: 0.9em;
+      font-weight: 500;
+      letter-spacing: 0.05em;
+      transition: all 0.3s ease;
+      color: #64ffda;
+
       &:hover {
-        color: #dbdbdb;
-        background-color: rgba(255, 255, 255, 0.2);
+        background-color: rgba(100, 255, 218, 0.1);
+      }
+
+      &.primary {
+        background-color: #64ffda;
+        color: #0a0a0a;
+
+        &:hover {
+          background-color: #45e6c4;
+        }
       }
     }
   }

@@ -1,9 +1,12 @@
+$accent-color: #64ffda;
+$hover-accent-color-primary: #45e6c4;
+$hover-accent-color-secondary: rgba(100, 255, 218, 0.1);
+$text-color: #ccd6f6;
+$grey-color: #888888;
+$background-color: #0a0a0a;
+
 .about {
-  text-align: center;
-  max-width: 50em;
-  margin: 0 auto;
-  padding: 1em;
-  color: #ccd6f6;
+  color: $text-color;
 
   h1 {
     font-size: 3.5em;
@@ -14,7 +17,7 @@
   .job-title {
     font-size: 1.2em;
     margin-bottom: 2em;
-    color: #888;
+    color: $grey-color;
     font-weight: 300;
     letter-spacing: 0.25em;
   }
@@ -36,32 +39,47 @@
   .cta-buttons {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     gap: 1em;
 
     .cta-button {
       text-decoration: none;
       padding: 0.75em 1.5em;
-      border: 1px solid #64ffda;
+      border: 1px solid $accent-color;
       border-radius: 4px;
-      font-size: 0.9em;
+      font-size: 0.8em;
       font-weight: 500;
       letter-spacing: 0.05em;
       transition: all 0.3s ease;
-      color: #64ffda;
+      color: $accent-color;
 
       &:hover {
-        background-color: rgba(100, 255, 218, 0.1);
+        background-color: $hover-accent-color-secondary;
       }
 
       &.primary {
-        background-color: #64ffda;
-        color: #0a0a0a;
+        background-color: $accent-color;
+        color: $background-color;
 
         &:hover {
-          background-color: #45e6c4;
+          background-color: $hover-accent-color-primary;
         }
       }
     }
   }
+}
+.label {
+  display: inline-block;
+  background-color: $text-color;
+  padding: 5px 15px;
+  border-radius: 4px;
+  margin: 0
+}
+
+.label span {
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: #1a1a2e;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }

@@ -7,7 +7,7 @@ function Header() {
       <Greeting />
       <nav>
         <a href="#about">About</a>
-        <a href="https://kenrotaris.dev/projects">Projects</a>
+        <a href="#projects">Projects</a>
         <a href="mailto:info@kenrotaris.dev">Contact</a>
       </nav>
     </header>

@@ -1,0 +1,19 @@
+@import '../../../style/variables.scss';
+
+.label {
+  display: inline-block;
+  background-color: var(--color-primary);
+  padding: 5px 15px;
+  border-radius: var(--border-radius);
+  margin: 0;
+  margin-bottom: 2.5em;
+
+  span {
+    font-family: var(--font-family-primary);
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--color-background);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+}

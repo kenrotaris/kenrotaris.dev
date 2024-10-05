@@ -4,6 +4,7 @@ import './Projects.scss';
 import favicon from '../../../assets/images/portfolio.svg';
 import chessImage from '../../../assets/images/chess.svg';
 import ProjectItem from './ProjectItem/ProjectItem';
+import Label from '../../common/Label/Label';
 
 const sideProjects = [
   {
@@ -26,8 +27,8 @@ const sideProjects = [
 
 const Projects: React.FC = () => {
   return (
-    <section className="projects-section">
-      <h2 className="section-title">Projects</h2>
+    <section id = "projects" className="projects-section">
+      <Label text="Projects" />
       <div className="projects-list">
         {sideProjects.map((project, index) => (
           <ProjectItem key={index} {...project} />

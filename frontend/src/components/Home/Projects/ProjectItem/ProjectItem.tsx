@@ -1,5 +1,6 @@
 import React from 'react';
 import './ProjectItem.scss'
+import Tag from '../../../common/Tag/Tag';
 
 interface ProjectItemProps {
   year: string;
@@ -27,9 +28,9 @@ const ProjectItem: React.FC<ProjectItemProps> = ({ year, image, title, descripti
         </h3>
         <p className="project-description">{description}</p>
         <div className="project-tags">
-          {tags.map((tag, index) => (
-            <span key={index} className="project-tag">{tag}</span>
-          ))}
+            {tags.map((tag, index) => (
+                <Tag key={index} text={tag} />
+            ))}
         </div>
       </div>
     </div>

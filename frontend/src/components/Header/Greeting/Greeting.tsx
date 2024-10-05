@@ -8,15 +8,15 @@ const Greeting = () => {
     const currentHour = new Date().getHours();
 
     if (currentHour < 6) {
-      setGreeting('Still up? 🌙 Good night, but feel free to explore!');
+      setGreeting('Still up? 🦉');
     } else if (currentHour < 12) {
-      setGreeting('Good morning! 🌞');
+      setGreeting('Good morning! 🐔');
     } else if (currentHour < 17) {
-      setGreeting('Good afternoon!');
+      setGreeting('Good afternoon! 🌞');
     } else if (currentHour < 20) {
-      setGreeting('Good evening!');
+      setGreeting('Good evening! 🌖');
     } else {
-      setGreeting('Good night! 🌙');
+      setGreeting('Good night! 🌛');
     }
   }, []);
 

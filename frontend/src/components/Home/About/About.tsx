@@ -1,12 +1,11 @@
 import BionicText from "../../common/bionic/BionicText";
+import Label from "../../common/Label/Label";
 import "./About.scss";
 
 function About() {
   return (
-    <section className="about">
-      <div className="label">
-        <span>ABOUT ME</span>
-      </div>
+    <section id = "about" className="about">
+      <Label text="About Me" />
       <h1>KEN ROTARIS</h1>
       <p className="job-title">Full-Stack Developer</p>
       <div className="about-content">

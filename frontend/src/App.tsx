@@ -1,8 +1,7 @@
-// Main app component with routing
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from "./pages/Home/Home";
-import ProjectsHome from "./pages/Projects/Projects";
+import './App.scss';
 
 function App() {
   useEffect(() => {

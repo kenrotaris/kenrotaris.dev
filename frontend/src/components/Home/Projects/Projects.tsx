@@ -1,15 +1,13 @@
 // Projects.tsx
 import React from 'react';
-import './Projects.scss';
 import boldspeed from '../../../assets/images/bold-speed.png';
 import portfolio from '../../../assets/images/fullstack-developer-portfolio.png';
 import jennkins from '../../../assets/images/jenkins.png';
 import chessAi from '../../../assets/images/chess-ai.png';
 import aiProject from '../../../assets/images/ai-project.png';
-import ProjectItem from './ProjectItem/ProjectItem';
-import Label from '../../common/Label/Label';
+import TimelineCard from '../../common/TimelineCard/TimelineCard';
 
-const sideProjects = [
+const projects = [
   {
     year: "2024",
     image: aiProject,
@@ -52,17 +50,13 @@ const sideProjects = [
   }
 ];
 
-const Projects: React.FC = () => {
+const App: React.FC = () => {
   return (
-    <section id = "projects" className="projects-section">
-      <Label text="Projects" />
-      <div className="projects-list">
-        {sideProjects.map((project, index) => (
-          <ProjectItem key={index} {...project} />
-        ))}
-      </div>
-    </section>
+    <div>
+      <TimelineCard title="Projects" items={projects} />
+    </div>
   );
 };
 
-export default Projects;
+export default App;
+

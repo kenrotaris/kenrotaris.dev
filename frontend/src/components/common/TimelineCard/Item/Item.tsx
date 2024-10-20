@@ -1,6 +1,6 @@
 import React from 'react';
-import './ProjectItem.scss'
-import Tag from '../../../common/Tag/Tag';
+import './Item.scss'
+import Tag from '../../Tag/Tag';
 
 interface ProjectItemProps {
   year: string;

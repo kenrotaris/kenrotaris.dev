@@ -6,8 +6,7 @@ function Header() {
     <header className="header">
       <Greeting />
       <nav>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
+        <a href="https://docs.google.com/document/d/1VBj8NdGKL5xHQkESfxWHW6E-rZwVoWP9QrnUXFfTYXs/edit?usp=sharing">Resume</a>
         <a href="mailto:info@kenrotaris.dev">Contact</a>
       </nav>
     </header>

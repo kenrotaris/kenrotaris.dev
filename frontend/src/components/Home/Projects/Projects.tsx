@@ -1,10 +1,10 @@
 // Projects.tsx
 import React from 'react';
-import boldspeed from '../../../assets/images/bold-speed.png';
-import portfolio from '../../../assets/images/fullstack-developer-portfolio.png';
-import jennkins from '../../../assets/images/jenkins.png';
-import chessAi from '../../../assets/images/chess-ai.png';
-import aiProject from '../../../assets/images/ai-project.png';
+import boldspeed from '../../../assets/images/projects/bold-speed.png';
+import portfolio from '../../../assets/images/projects/fullstack-developer-portfolio.png';
+import jennkins from '../../../assets/images/projects/jenkins.png';
+import chessAi from '../../../assets/images/projects/chess-ai.png';
+import aiProject from '../../../assets/images/projects/ai-project.png';
 import TimelineCard from '../../common/TimelineCard/TimelineCard';
 
 const projects = [
@@ -50,7 +50,7 @@ const projects = [
   }
 ];
 
-const App: React.FC = () => {
+const Projects: React.FC = () => {
   return (
     <div>
       <TimelineCard title="Projects" items={projects} />
@@ -58,5 +58,5 @@ const App: React.FC = () => {
   );
 };
 
-export default App;
+export default Projects;
 

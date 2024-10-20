@@ -18,7 +18,6 @@ interface ListedItemProps {
 const TimelineCard: React.FC<ListedItemProps> = ({ title, items }) => {
   return (
     <section className="listed-items-section">
-      <Label text={title} />
       <div className="items-list">
         {items.map((item, index) => (
           <ProjectItem key={index} {...item} />

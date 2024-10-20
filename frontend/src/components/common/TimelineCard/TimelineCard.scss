@@ -1,16 +1,8 @@
 @import '../../../style/variables.scss';
 
-.projects-section {
-  padding: var(--spacing-large) 0;
-  margin: 0 auto;
-
-  .section-title {
-    font-size: var(--font-medium);
-    margin-bottom: var(--spacing-tiny);
-    color: var(--color-primary);
-  }
-
-  .projects-list {
+.listed-items-section {
+  margin-bottom: var(--spacing-medium);
+  .items-list {
     display: flex;
     flex-direction: column;
     gap: var(--spacing-medium);

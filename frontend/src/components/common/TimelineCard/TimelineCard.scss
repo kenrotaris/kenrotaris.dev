@@ -1,10 +1,8 @@
 @import '../../../style/variables.scss';
 
 .listed-items-section {
-  margin-bottom: var(--spacing-medium);
   .items-list {
     display: flex;
     flex-direction: column;
-    gap: var(--spacing-medium);
   }
 }

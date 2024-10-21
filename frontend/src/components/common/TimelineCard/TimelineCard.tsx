@@ -1,7 +1,6 @@
 import React from "react";
 import "./TimelineCard.scss";
 import ProjectItem from "./Item/Item";
-import Label from "../Label/Label";
 
 interface ListedItemProps {
   title: string;

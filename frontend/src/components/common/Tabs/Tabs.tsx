@@ -1,32 +1,33 @@
-import React from 'react';
-import './Tabs.scss';
-import Label from '../Label/Label';
+import React from "react";
+import "./Tabs.scss";
 
-interface Tab {
-    id: string;
-    title: string;
-  }
-  
-  interface TabsProps {
-    tabs: Tab[];
-    activeTab: string;
-    onTabClick: (tabId: string) => void;
-  }
-  
-  const Tabs: React.FC<TabsProps> = ({ tabs, activeTab, onTabClick }) => {
-    return (
-      <div className="tabs-container">
-        {tabs.map((tab) => (
-          <div 
-            key={tab.id} 
-            className={`tab ${activeTab === tab.id ? 'active' : ''}`}
-            onClick={() => onTabClick(tab.id)}
-          >
-            <span className="tab-label">{tab.title}</span>
-          </div>
-        ))}
-      </div>
-    );
-  };
-  
-  export default Tabs;
+type TabId = 'projects' | 'experience' | 'education';
+
+export interface Tab {
+  id: TabId;
+  title: string;
+}
+
+interface TabsProps {
+  tabs: string[];
+  activeTab: string;
+  onTabClick: (tabId: string) => void;
+}
+
+const Tabs: React.FC<TabsProps> = ({ tabs, activeTab, onTabClick }) => {
+  return (
+    <div className="tabs-container">
+      {tabs.map((tab) => (
+        <div
+          key={tab}
+          className={`tab ${activeTab === tab ? "active" : ""}`}
+          onClick={() => onTabClick(tab)}
+        >
+          <span className="tab-label">{tab}</span>
+        </div>
+      ))}
+    </div>
+  );
+};
+
+export default Tabs;

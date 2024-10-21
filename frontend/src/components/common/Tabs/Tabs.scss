@@ -2,7 +2,8 @@
 
 .tabs-container {
     display: flex;
-    padding: var(--spacing-small) 0;
+    border-bottom: 0.5px solid var(--color-accent);
+    margin: var(--spacing-small) 0;
   }
   
   .tab {

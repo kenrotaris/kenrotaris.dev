@@ -5,33 +5,37 @@ import Projects from "../../components/Home/Projects/Projects";
 import "./Home.scss";
 import Experience from "../../components/Home/Experience/Experience";
 import { useState } from "react";
-import Label from "../../components/common/Label/Label";
 import Tabs from "../../components/common/Tabs/Tabs";
+import Education from "../../components/Home/Education/Education";
 
-//TODO: Use <header>, <main>, <footer>, <section>, and <nav> appropriately
+type TabId = 'projects' | 'experience' | 'education';
+
 function Home() {
-  const [activeTab, setActiveTab] = useState<string>('projects');
-  const tabs = [
-    { id: 'projects', title: 'Projects' },
-    { id: 'experience', title: 'Experience' }
-  ];
+  const [activeTab, setActiveTab] = useState<string>('Projects');
+  const tabs = ['Projects', 'Experience', 'Education'];
+
+  const tabComponents: Record<string, JSX.Element> = {
+    Projects: <Projects />,
+    Experience: <Experience />,
+    Education: <Education />
+  };
 
   return (
     <div className="home-container">
-      <Header></Header>
+      <Header />
       <main className="main-content">
-        <About></About>
-        <Tabs 
-          tabs={tabs} 
-          activeTab={activeTab} 
-          onTabClick={setActiveTab} 
+        <About />
+        <Tabs
+          tabs={tabs}
+          activeTab={activeTab}
+          onTabClick={setActiveTab}
         />
-        {activeTab === 'projects' ? <Projects /> : <Experience />}
-
+        {tabComponents[activeTab]}
       </main>
-      <Footer></Footer>
+      <Footer />
     </div>
   );
+
 }
 
 export default Home;

@@ -1,14 +1,9 @@
-@import '../../../../style/variables.scss';
+@import "../../../../style/variables.scss";
 
 .project-item {
   display: flex;
   gap: var(--spacing-small);
-
-  .project-year {
-    font-size: 1.2em;
-    color: var(--color-accent);
-    white-space: nowrap;
-  }
+  padding: var(--spacing-small);
 
   .project-content {
     flex: 1;
@@ -17,6 +12,16 @@
 
     .project-details {
       flex: 1;
+
+      .project-year {
+        font-size: 1.2em;
+        color: var(--color-accent);
+        white-space: nowrap;
+      }
+
+      h3 {
+        margin-top: 0;
+      }
 
       .project-title {
         font-size: var(--font-medium);
@@ -42,6 +47,7 @@
         color: var(--color-secondary);
         margin-bottom: var(--spacing-tiny);
         line-height: 1.6;
+        overflow-wrap: break-word;
       }
 
       .project-tags {
@@ -59,7 +65,7 @@
       }
     }
   }
-  
+
   .svg-icon {
     width: 80px;
     height: 80px;

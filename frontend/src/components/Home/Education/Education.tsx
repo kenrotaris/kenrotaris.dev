@@ -11,49 +11,49 @@ import angular from '../../../assets/images/education/angular.svg';
 
 const education = [
   {
-    year: "2024",
+    year: "Completed: Jun 2024",
     image: angular,
     title: "Angular Training",
     description: "Completed a specialized course in Angular and TypeScript, instructed by Jonas Bandi, enhancing my skills in modern web application development.",
     tags: ["Angular", "Typescript"],
     link: "https://www.letsboot.ch/en-gb/course/angular-typescript"
   }, {
-    year: "2024",
+    year: "Issued: Mar 2024",
     image: codeingame,
     title: "Codeingame Java Certification",
     description: "Obtained a certification in Java programming from CodingGame, demonstrating proficiency in Java development and problem-solving skills.",
     tags: ["Java", "Problem Solving"],
     link: "https://www.codingame.com/certification/o3JCl4HBV5hY2rXq8_dqsg"
   }, {
-    year: "2024",
+    year: "Issued: Feb 2024",
     image: google,
     title: "Generative AI Fundamentals",
     description: "Completed a Google Cloud course on Generative AI Fundamentals, gaining an understanding of AI technologies, large language models, and ethical AI principles.",
     tags: ["Machine Learning", "Python", "Large Language Models"],
     link: "https://www.cloudskillsboost.google/public_profiles/c8878034-0793-4845-a997-aa046b3345eb/"
   }, {
-    year: "2023",
+    year: "Issued: Apr 2023",
     image: baeldung,
     title: "Spring Framework: The Certification Class",
     description: "Successfully completed Baeldung's Spring Framework Certification Class, deepening expertise in enterprise application development with Spring.",
     tags: ["Spring Framework", "REST API", "Java"],
     link: "https://courses.baeldung.com/courses/1288580/certificate"
   }, {
-    year: "2022",
+    year: "Sep 2018 - Jul 2022",
     image: uniBasel,
     title: "Universität Basel",
     description: "Bachelor Degree in Computer Science",
     tags: ["Java", "Python", "C++", "Machine Learning", "Algorithms & Data Structures", "Linux"],
     link: "https://dmi.unibas.ch/de/studium/computer-science-informatik/"
   }, {
-    year: "2018",
+    year: "Aug 2017 - Jul 2018",
     image: uniZürich,
     title: "Universität Zürich",
     description: "Faculty of Psychology",
     tags: ["Psychology", "Neuroscience"],
     link: "https://www.psychologie.uzh.ch/de.html"
   }, {
-    year: "2017",
+    year: "Aug 2016 - Jul 2017",
     image: uniBasel,
     title: "Universität Basel",
     description: "Faculty of Law",

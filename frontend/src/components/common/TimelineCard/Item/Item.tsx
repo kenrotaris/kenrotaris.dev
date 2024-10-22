@@ -4,11 +4,11 @@ import Tag from "../../Tag/Tag";
 
 interface ProjectItemProps {
   year: string;
-  image?: string;
+  image: string;
   title: string;
   description: string;
   tags: string[];
-  link?: string;
+  link: string | null;
 }
 
 const ProjectItem: React.FC<ProjectItemProps> = ({
@@ -25,14 +25,15 @@ const ProjectItem: React.FC<ProjectItemProps> = ({
       <div className="project-details">
         <div className="project-year">{year}</div>
         <h3 className="project-title">
-          {link ? (
+          {link?.trim() ? (
             <a href={link} target="_blank" rel="noopener noreferrer">
               {title} <span className="link-arrow">↗</span>
             </a>
           ) : (
-            title
+            <p>{title}</p>
           )}
         </h3>
+
         <p className="project-description">{description}</p>
         <div className="project-tags">
           {tags.map((tag, index) => (

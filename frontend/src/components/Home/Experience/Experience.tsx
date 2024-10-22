@@ -42,7 +42,7 @@ const projects = [
 const Experience: React.FC = () => {
   return (
     <div>
-      <TimelineCard title="Experience" items={projects} />
+      <TimelineCard items={projects} />
     </div>
   );
 };

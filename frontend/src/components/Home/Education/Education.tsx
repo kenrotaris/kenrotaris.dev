@@ -65,7 +65,7 @@ const education = [
 const Education: React.FC = () => {
   return (
     <div>
-      <TimelineCard title="Education" items={education} />
+      <TimelineCard items={education} />
     </div>
   );
 };

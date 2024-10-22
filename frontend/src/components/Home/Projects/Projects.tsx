@@ -5,6 +5,11 @@ import portfolio from '../../../assets/images/projects/fullstack-developer-portf
 import jennkins from '../../../assets/images/projects/jenkins.png';
 import chessAi from '../../../assets/images/projects/chess-ai.png';
 import aiProject from '../../../assets/images/projects/ai-project.png';
+import gorillas from '../../../assets/images/projects/gorillas.png';
+import bacnet from '../../../assets/images/projects/bacnet.png';
+import terminal from '../../../assets/images/projects/terminal.png';
+import data from '../../../assets/images/projects/data.png';
+import arduino from '../../../assets/images/projects/arduino.png';
 import TimelineCard from '../../common/TimelineCard/TimelineCard';
 
 const projects = [
@@ -43,13 +48,48 @@ const projects = [
     description: "Completed a Bachelor's thesis project on solving Single-Player Chess using AI planning techniques. Compared domain-independent and domain-specific approaches to highlight their strengths and weaknesses. Developed a terminal chess user interface and implemented plan validation in Python and Java.",
     tags: ["AI Planning", "PDDL", "Java", "Python", "Fast Downward", "Bitboards"],
     link: "https://github.com/kenrotaris/Bachelor-Thesis_Single-Player-Chess"
+  }, {
+    year: "2021",
+    image: data,
+    title: "Data Integration and Analysis of Crime and Death Rates",
+    description: "Consolidated multiple data sources into a single dataset about Crime rates, death rates and economic data in the United States. Performed data cleaning and validation on 4 GB of data, followed by comprehensive analysis and visualizations to uncover key insights.",
+    tags: ["SQL", "Python", "Pandas", "Data Cleaning", "Data Integration", "Data Visualization"],
+    link: null
+  }, {
+    year: "2021",
+    image: arduino,
+    title: "LED Tetris Game with Arduino",
+    description: "Constructed an LED-based Tetris game by soldering LEDs to a display screen and multiplexing them using specialized components. Utilized an Arduino for controlling the display and inputs, integrated a joystick for gameplay.",
+    tags: ["C++", "Arduino", "Game Development", "Soldering", "Hardware", "Multiplexing"],
+    link: null
+  }, {
+    year: "2020",
+    image: terminal,
+    title: "Gnome Terminal Emulator in C",
+    description: "Description: A C-based replica of Gnome Terminal featuring over 20 essential commands like cat, mv, ls, and mount.",
+    tags: ["C", "Linux", "Command-Line Interface", "Terminal Emulator"],
+    link: null
+  }, {
+    year: "2020",
+    image: bacnet,
+    title: "BACnet Messenger: A WhatsApp Alternative",
+    description: "Developed using Python and Tkinter, SubjectiveChat offers encrypted private and group messaging. Part of the BACnet project, it ensures reliable communication without centralized servers.",
+    tags: ["Python", "Tkinter", "Decentralized Communication", "Secure Chat", "BACnet", "Networking"],
+    link: "https://github.com/cn-uofbasel/BACnet/tree/master/20-fs-ias-lec/groups/03-subChat"
+  }, {
+    year: "2019",
+    image: gorillas,
+    title: "Java Revival of a Classic QBasic Game",
+    description: "An online multiplayer version of the traditional 'Gorilla' game, recreated using Java. This project allows players to connect and compete over the internet, maintaining the original gameplay mechanics while introducing modern networking features.",
+    tags: ["Java", "Java FX", "Game Development", "Networking"],
+    link: null
   }
 ];
 
 const Projects: React.FC = () => {
   return (
     <div>
-      <TimelineCard title="Projects" items={projects} />
+      <TimelineCard items={projects} />
     </div>
   );
 };

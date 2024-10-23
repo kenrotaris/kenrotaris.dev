@@ -3,14 +3,11 @@
 .label {
   display: inline-block;
   background-color: var(--color-primary);
-  padding: 5px 15px;
+  padding: var(--spacing-xs) var(--spacing-s);
   border-radius: var(--border-radius);
-  margin: 0;
-  margin-bottom: 2.5em;
+  margin-bottom: var(--spacing-s);
 
   span {
-    font-family: var(--font-family-primary);
-    font-size: 18px;
     font-weight: bold;
     color: var(--color-background);
     text-transform: uppercase;

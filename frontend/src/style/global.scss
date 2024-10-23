@@ -1,13 +1,27 @@
 @font-face {
-    font-family: 'GeistMonoVF';
-    src: url('/src/assets/fonts/GeistMonoVF.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "GeistMonoVF";
+  src: url("/src/assets/fonts/GeistMonoVF.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'GeistVF';
-    src: url('/src/assets/fonts/GeistVF.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "GeistVF";
+  src: url("/src/assets/fonts/GeistVF.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+a, span {
+  text-decoration: none;
+  transition: color 0.3s ease;
+  color: var(--color-primary);
+
+  &:hover {
+    color: var(--color-accent);
+  }
+  .link-arrow {
+    font-size: var(--font-xs);
+    vertical-align: super;
+  }
 }

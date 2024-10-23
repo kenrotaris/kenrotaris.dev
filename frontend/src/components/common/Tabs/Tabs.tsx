@@ -23,7 +23,7 @@ const Tabs: React.FC<TabsProps> = ({ tabs, activeTab, onTabClick }) => {
           className={`tab ${activeTab === tab ? "active" : ""}`}
           onClick={() => onTabClick(tab)}
         >
-          <span className="tab-label">{tab}</span>
+          <span>{tab}</span>
         </div>
       ))}
     </div>

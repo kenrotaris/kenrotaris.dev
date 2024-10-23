@@ -46,14 +46,14 @@ const education = [
     tags: ["Java", "Python", "C++", "Machine Learning", "Algorithms & Data Structures", "Linux"],
     link: "https://dmi.unibas.ch/de/studium/computer-science-informatik/"
   }, {
-    year: "Aug 2017 - Jul 2018",
+    year: "Sep 2017 - Jul 2018",
     image: uniZürich,
     title: "Universität Zürich",
     description: "Faculty of Psychology",
     tags: ["Psychology", "Neuroscience"],
     link: "https://www.psychologie.uzh.ch/de.html"
   }, {
-    year: "Aug 2016 - Jul 2017",
+    year: "Sep 2016 - Jul 2017",
     image: uniBasel,
     title: "Universität Basel",
     description: "Faculty of Law",

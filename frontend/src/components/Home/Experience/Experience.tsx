@@ -25,14 +25,14 @@ const projects = [
   }, {
     year: "Jun 2015 - Jul 2016",
     image: zeusSupplements,
-    title: "Zeus Supplements GmbH: Web Developer",
+    title: "Zeus Supplements GmbH",
     description: "Developed a Shopware e-commerce platform and and executed successful online marketing campaigns on Google-Ads and Meta-Ads for a Fitness Supplements Company.",
     tags: ["Shopware", "HTML", "CSS", "PHP", "Javascript", "Meta Ads", "Google Ads", "Adobe Illustrator", "Adobe Photoshop"],
     link: "http://zeus-supplements.ch/"
   }, {
     year: "Dec 2014 - Jan 2021",
     image: mountVantage,
-    title: "Mount Vantage GmbH: Management & Operation",
+    title: "Mount Vantage GmbH",
     description: "Managed operations and marketing, significantly growing a YouTube channel to a peak of 4 million subscribers and generating substantial revenue through strategic content initiatives.",
     tags: ["Communication", "Marketing", "Management", "Adobe After Effects", "Adobe Premiere Pro", "Adobe Illustrator", "Adobe Photoshop", "Camtasia"],
     link: "https://github.com/kenrotaris/kenrotaris.dev"

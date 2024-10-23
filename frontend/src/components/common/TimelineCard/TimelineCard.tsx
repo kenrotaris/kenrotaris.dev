@@ -1,6 +1,6 @@
 import React from "react";
 import "./TimelineCard.scss";
-import ProjectItem from "./Item/Item";
+import Item from "./Item/Item";
 
 interface ListedItemProps {
   items: Array<{
@@ -18,7 +18,7 @@ const TimelineCard: React.FC<ListedItemProps> = ({ items }) => {
     <section className="listed-items-section">
       <div className="items-list">
         {items.map((item, index) => (
-          <ProjectItem key={index} {...item} />
+          <Item key={index} {...item} />
         ))}
       </div>
     </section>

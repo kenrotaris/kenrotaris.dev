@@ -1,8 +1,8 @@
 import React from "react";
 import "./Item.scss";
-import Tag from "../../Tag/Tag";
+import Tags from "./Tags/Tags";
 
-interface ProjectItemProps {
+interface ItemProps {
   year: string;
   image: string;
   title: string;
@@ -11,7 +11,7 @@ interface ProjectItemProps {
   link: string | null;
 }
 
-const ProjectItem: React.FC<ProjectItemProps> = ({
+const Item: React.FC<ItemProps> = ({
   year,
   image,
   title,
@@ -19,30 +19,30 @@ const ProjectItem: React.FC<ProjectItemProps> = ({
   tags,
   link,
 }) => (
-  <div className="project-item">
-    <div className="project-content">
-      {image && <img src={image} alt={title} className="svg-icon" />}
-      <div className="project-details">
-        <div className="project-year">{year}</div>
-        <h3 className="project-title">
-          {link?.trim() ? (
+  <div className="item">
+    <div className="top-section">
+      {image && <img src={image} alt={title} className="image" />}
+      <div className="year-and-title">
+        <div className="year">{year}</div>
+        <h3 className="title">
+          {link ? (
             <a href={link} target="_blank" rel="noopener noreferrer">
               {title} <span className="link-arrow">↗</span>
             </a>
           ) : (
-            <p>{title}</p>
+            <span>{title}</span>
           )}
         </h3>
-
-        <p className="project-description">{description}</p>
-        <div className="project-tags">
-          {tags.map((tag, index) => (
-            <Tag key={index} text={tag} />
-          ))}
-        </div>
+      </div>
+    </div>
+    <div className="bottom-section">
+      <div className="desktop-placeholder"></div>
+      <div className="description">
+        <p>{description}</p>
+        <Tags tags={tags} />
       </div>
     </div>
   </div>
 );
 
-export default ProjectItem;
+export default Item;

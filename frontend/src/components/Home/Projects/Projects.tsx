@@ -1,4 +1,3 @@
-// Projects.tsx
 import React from 'react';
 import boldspeed from '../../../assets/images/projects/bold-speed.png';
 import portfolio from '../../../assets/images/projects/fullstack-developer-portfolio.png';
@@ -16,10 +15,10 @@ const projects = [
   {
     year: "2024",
     image: aiProject,
-    title: "Next Up: Machine Learning Project",
+    title: "Machine Learning Project",
     description: "Since AI seems to be the future, I plan to make a Machine Learning Project to get my hands dirty. Planned is a project using PyTorch transforming data into actionable insights.",
     tags: ["Python", "Pytorch", "Pandas", "Machine Learning"],
-    link: " "
+    link: null
   }, {
     year: "2024",
     image: boldspeed,
@@ -37,7 +36,7 @@ const projects = [
   }, {
     year: "2024",
     image: jennkins,
-    title: "Jenkins Pipeline (CI/CD)",
+    title: "Jenkins Pipeline",
     description: "Custom CI/CD pipeline utilizing Jenkins to automate build, testing and deployment of kenrotaris.dev. This setup uses a custom Linux environment hosted on Hetzner Cloud, with Docker for operational consistency. Nginx is configured as a reverse proxy, with Modoboa handling secure, private email services, facilitating seamless development and deployment workflows.",
     tags: ["Jenkins", "Docker", "Linux", "Gradle", "Hetzner Cloud"],
     link: "https://jenkins.kenrotaris.dev"
@@ -51,35 +50,35 @@ const projects = [
   }, {
     year: "2021",
     image: data,
-    title: "Data Integration and Analysis of Crime and Death Rates",
+    title: "Analyzing National Crime Data",
     description: "Consolidated multiple data sources into a single dataset about Crime rates, death rates and economic data in the United States. Performed data cleaning and validation on 4 GB of data, followed by comprehensive analysis and visualizations to uncover key insights.",
     tags: ["SQL", "Python", "Pandas", "Data Cleaning", "Data Integration", "Data Visualization"],
     link: null
   }, {
     year: "2021",
     image: arduino,
-    title: "LED Tetris Game with Arduino",
+    title: "Arduino Project",
     description: "Constructed an LED-based Tetris game by soldering LEDs to a display screen and multiplexing them using specialized components. Utilized an Arduino for controlling the display and inputs, integrated a joystick for gameplay.",
     tags: ["C++", "Arduino", "Game Development", "Soldering", "Hardware", "Multiplexing"],
     link: null
   }, {
     year: "2020",
     image: terminal,
-    title: "Gnome Terminal Emulator in C",
+    title: "Gnome Terminal Emulator",
     description: "Description: A C-based replica of Gnome Terminal featuring over 20 essential commands like cat, mv, ls, and mount.",
     tags: ["C", "Linux", "Command-Line Interface", "Terminal Emulator"],
     link: null
   }, {
     year: "2020",
     image: bacnet,
-    title: "BACnet Messenger: A WhatsApp Alternative",
+    title: "Decentralized Messenger",
     description: "Developed using Python and Tkinter, SubjectiveChat offers encrypted private and group messaging. Part of the BACnet project, it ensures reliable communication without centralized servers.",
     tags: ["Python", "Tkinter", "Decentralized Communication", "Secure Chat", "BACnet", "Networking"],
     link: "https://github.com/cn-uofbasel/BACnet/tree/master/20-fs-ias-lec/groups/03-subChat"
   }, {
     year: "2019",
     image: gorillas,
-    title: "Java Revival of a Classic QBasic Game",
+    title: "QBasic Gorillas Clone",
     description: "An online multiplayer version of the traditional 'Gorilla' game, recreated using Java. This project allows players to connect and compete over the internet, maintaining the original gameplay mechanics while introducing modern networking features.",
     tags: ["Java", "Java FX", "Game Development", "Networking"],
     link: null

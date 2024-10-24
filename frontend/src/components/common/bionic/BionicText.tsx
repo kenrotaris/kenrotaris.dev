@@ -5,19 +5,19 @@ interface BionicTextProps {
     text: string;
 }
 
-const BionicText: React.FC<BionicTextProps> = ({ text }) => {
+const BoldFastText: React.FC<BionicTextProps> = ({ text }) => {
     const bionicWords = text.split(' ').map((word, index) => {
         const splitIndex = Math.ceil(word.length / 3);
         const firstPart = word.substring(0, splitIndex);
         const restPart = word.substring(splitIndex);
         return (
             <React.Fragment key={index}>
-                <span className="bionic">{firstPart}</span>{restPart}{' '}
+                <a className="bionic">{firstPart}</a>{restPart}{' '}
             </React.Fragment>
         );
     });
 
-    return <span>{bionicWords}</span>;
+    return <p>{bionicWords}</p>;
 };
 
-export default BionicText;
+export default BoldFastText;

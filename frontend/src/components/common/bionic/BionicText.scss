@@ -1,3 +1,6 @@
 .bionic {
   font-weight: bold;
+  &:hover {
+    color: var(--color-primary);
+  }
 }

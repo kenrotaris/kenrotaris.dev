@@ -9,11 +9,11 @@ import zeusSupplements from '../../../assets/images/companies/zeus-supplements.p
 
 const projects = [
   {
-    year: "2022 - 2024",
+    year: "Sep 2022 - Present",
     image: elca,
     title: "ELCA Informatik",
     description: "Full-stack development with a focus on Java and Angular, leading the engineering of key tools including a migration tool and license management solution. Enhanced application performance and client service delivery.",
-    tags: ["Java", "Angular", "Typescript", "SQL", "Spring Framework", "Hibernate", "JPA", "Lombok", "Node.js", "Vaadin", "QueryDsl", "OpenApi", "JUnit", "Mockito", "MapStruct", "HTML", "CSS"],
+    tags: ["Java", "Angular", "Typescript", "SQL", "Spring Framework", "Docker", "Hibernate", "JPA", "Lombok", "Node.js", "Vaadin", "QueryDsl", "OpenApi", "JUnit", "Mockito", "MapStruct", "HTML", "CSS"],
     link: "https://www.elca.ch/"
   }, {
     year: "Jan 2020 - Aug 2023",

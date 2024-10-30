@@ -11,12 +11,6 @@ import data from '../../../assets/images/projects/data.png';
 import arduino from '../../../assets/images/projects/arduino.png';
 import TimelineCard from '../../common/TimelineCard/TimelineCard';
 
-import mail from '../../../assets/images/email/mail.svg';
-import phone from '../../../assets/images/email/phone.svg';
-import whatsapp from '../../../assets/images/email/whatsapp.svg';
-import telegram from '../../../assets/images/email/telegram.svg';
-import linkedin from '../../../assets/images/email/linkedin.svg';
-
 const projects = [
   {
     year: "2024",
@@ -92,11 +86,6 @@ const projects = [
 ];
 
 const Projects: React.FC = () => {
-  console.log('Mail SVG Path:', mail);
-  console.log('Phone SVG Path:', phone);
-  console.log('WhatsApp SVG Path:', whatsapp);
-  console.log('Telegram SVG Path:', telegram);
-  console.log('LinkedIn SVG Path:', linkedin);
   return (
     <div>
       <TimelineCard items={projects} />

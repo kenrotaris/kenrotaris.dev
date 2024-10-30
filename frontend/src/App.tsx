@@ -5,14 +5,14 @@ import './App.scss';
 
 function App() {
   useEffect(() => {
-    fetch('/backend/date')
-      .then(response => {
-        if (!response.ok) {
-          throw new Error("Network response was not ok");
-        }
-        response.text().then(text => console.log(text));
-      })
-      .catch(error => console.error("There was an error!", error));
+    // fetch('/backend/date')
+    //   .then(response => {
+    //     if (!response.ok) {
+    //       throw new Error("Network response was not ok");
+    //     }
+    //     response.text().then(text => console.log(text));
+    //   })
+    //   .catch(error => console.error("There was an error!", error));
   }, []);
 
   return (

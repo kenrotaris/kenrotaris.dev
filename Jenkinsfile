@@ -60,6 +60,7 @@ pipeline {
                         dir('frontend') {
                             sh 'rm -rf /opt/kenrotaris.dev/*'  // Clean up the target directory
                             sh 'cp -r dist/* /opt/kenrotaris.dev/'
+                            sh 'cp -r dist/assets/images/email /opt/kenrotaris.dev/assets'
                         }
                     } else {
                         echo "Skipping deployment. Current branch is: ${env.GIT_BRANCH}, not 'origin/main'."
